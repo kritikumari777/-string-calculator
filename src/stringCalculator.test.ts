@@ -6,5 +6,9 @@ describe('string calculator - add', () => {
     expect(add('')).toBe(0);
   });
 
+  test('single number returns value', () => {
+  expect(add('5')).toBe(5);
+});
+
 });
 
