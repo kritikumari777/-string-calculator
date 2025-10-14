@@ -15,8 +15,22 @@ describe('string calculator - add', () => {
   });
 
   test('supports newlines as delimiters', () => {
-  expect(add('1\n2,3')).toBe(6);
-});
+    expect(add('1\n2,3')).toBe(6);
+  });
 
-});
+  test('supports custom single char delimiter', () => {
+    expect(add('//;\n1;2')).toBe(3);
+  });
 
+  test('throws on negatives and lists them', () => {
+    expect(() => add('1,-2,3,-4')).toThrow('Negatives not allowed: -2,-4');
+  });
+
+  test('supports multi-char custom delimiter', () => {
+    expect(add('//[***]\n1***2***3')).toBe(6);
+  });
+
+  test('supports multiple delimiters', () => {
+    expect(add('//[*][%]\n1*2%3')).toBe(6);
+  });
+});
