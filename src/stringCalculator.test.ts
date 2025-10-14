@@ -22,6 +22,10 @@ describe('string calculator - add', () => {
     expect(add('//;\n1;2')).toBe(3);
   });
 
+  test('ignores numbers > 1000', () => {
+    expect(add('2,1001')).toBe(2);
+  });
+
   test('throws on negatives and lists them', () => {
     expect(() => add('1,-2,3,-4')).toThrow('Negatives not allowed: -2,-4');
   });
