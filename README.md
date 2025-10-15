@@ -7,10 +7,10 @@ This project contains a **String Calculator template** built using React. The pr
 ## Project Structure
 
 - **src/**
-  - `App.tsx`: The React component with accessibility issues.
-  - `stringCalculator.ts`: Implementation of the String Calculator logic (to be developed).
+  - `App.tsx`: The React component with accessibility issues completed.
+  - `stringCalculator.ts`: Implementation of the String Calculator logic (to be developed) completed.
 - **tests/**
-  - `stringCalculator.test.ts`: Suite of tests for the String Calculator functionality (to be developed).
+  - `stringCalculator.test.ts`: Suite of tests for the String Calculator functionality (to be developed) completed.
 
 ## Getting Started
 
@@ -41,5 +41,5 @@ This project contains a **String Calculator template** built using React. The pr
 
 ## Task for Candidates
 
-- Implement the functionality of the String Calculator following TDD best practices.
-- Resolve accessibility issues in the `App.tsx`.
+- Implement the functionality of the String Calculator following TDD best practices - Implemented.
+- Resolve accessibility issues in the `App.tsx` - Resolved.
